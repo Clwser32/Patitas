@@ -1,0 +1,149 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #234b53;
+}
+
+.conmenufondo {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #05869d;
+  position: relative;
+  z-index: 2; /* Asegura que el contenedor conmenufondo esté en primer plano */
+}
+
+.titulo {
+  color: #000000; /* Color del texto del título */
+  font-size: 20px; /* Tamaño de fuente del título */
+  font-weight: bold; /* Peso de la fuente del título */
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.conmenu {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu {
+  position: relative;
+  margin-right: 20px;
+}
+
+.menu-btn,
+.menu-btn2 {
+  background-color: #5ce1e6;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.menu:hover .submenu {
+  display: block;
+}
+
+.submenu li {
+  list-style: none;
+}
+
+.submenu li a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* contenedores 70-30*/
+.contenedorpadre {
+  width: 99vw;
+
+  display: flex;
+  flex-direction: row;
+}
+
+/* contenedores 70-30*/
+/* contenedores 70-30*/
+.contenedorpadre {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden; /* Oculta el desplazamiento horizontal */
+}
+
+.conteiner1 {
+  /*control de scroll*/
+  overflow: auto;
+  max-width: 100%;
+  max-height: 100vh;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 70vw;
+  background-color: #f6e4c2;
+  justify-content: center;
+  padding: center;
+  margin: 3px;
+  max-width: 99.5%; /* Asegura que el contenedor no exceda el ancho del contenedor padre */
+  align-items: center;
+}
+.conteiner2 {
+  overflow: auto;
+  max-width: 100%;
+  max-height: 100vh;
+  margin: 0 auto;
+  padding: 20px;
+
+  display: flex;
+  height: 100vh;
+  width: 30vw;
+  background-color: #0097b2;
+  justify-content: center;
+  padding: center;
+  margin: 3px;
+  align-items: center;
+}
+
+.galeria-item {
+  width: calc(33.33% - 20px);
+  margin: 20px;
+}
+
+.imagen-contenedor {
+  position: relative;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px hsl(189, 100%, 35%); /* Agrega una sombra */
+}
+
+.imagen-contenedor img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.imagen-contenedor .nombre {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  background-color: hsl(189, 100%, 35%);
+  color: #fff;
+  font-size: 14px;
+}
