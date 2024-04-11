@@ -1,173 +1,96 @@
-body {
-  padding: 0;
+* {
+  box-sizing: border-box;
   margin: 0;
-  background-color: #2c2727;
+  padding: 0;
 }
-
-.conmenufondo {
-  width: 100%;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  background-color: #05869d;
-  position: relative;
-  z-index: 2; /* Asegura que el contenedor conmenufondo esté en primer plano */
-}
-
-.titulo {
-  color: #000000; /* Color del texto del título */
-  font-size: 20px; /* Tamaño de fuente del título */
-  font-weight: bold; /* Peso de la fuente del título */
-  text-align: center;
+body {
   font-family: Arial, Helvetica, sans-serif;
+  min-height: 100%;
+  font-size: 1.2rem;
+  
+}
+html {
+  height: 100%;
 }
 
-.conmenu {
-  display: flex;
-  flex-grow: 1;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.menu {
-  position: relative;
-  margin-right: 20px;
-}
-
-.menu-btn,
-.menu-btn2 {
-  background-color: #5ce1e6;
-  border: none;
+.grid-conteiner * {
+ 
+  border-radius: 4px;
   padding: 10px;
-  cursor: pointer;
-  border-radius: 20px;
+  text-align: center;
+ 
+}
+.header {
+  grid-area: header; 
+  background-color: chocolate;
+  
+}
+.navbar {
+  grid-area: navbar;
+  background-color: #05869d;
+}
+.sidebar {
+  grid-area: sidebar;
+  background-color: #0097b2;
+}
+.main {
+  grid-area: main;
+  background-color: rgb(42, 45, 42);
+}
+.footer {
+  grid-area: footer;
+  background-color: #0097B2;
+}
+/*GRID PARA MINIMIZAR*/
+.grid-conteiner {
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    "navbar"
+    "header"
+    "sidebar"
+    "main"
+    "footer";
 }
 
-.submenu {
+@media (min-width: 650px) {
+  .grid-conteiner {
+    grid-template-columns: 1000px auto;
+    grid-template-rows: 100px 50px auto 100px;
+    background-color: rgb(95, 95, 186);
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+      "navbar navbar"
+      "header header"
+      "main sidebar"
+      "footer footer";
+  }
+}
+.plain-link,
+.plain-button {
+  /* Restaurar estilos por defecto */
+  background: none;
+  border: black;
+  color: inherit;
+  font: inherit;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Estilos adicionales para el contenedor dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
   display: none;
   position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #fff;
-  padding: 10px;
+  z-index: 1;
 }
 
-.menu:hover .submenu {
+.dropdown-content a {
   display: block;
-}
-
-.submenu li {
-  list-style: none;
-}
-
-.submenu li a {
-  text-decoration: none;
-  color: #333;
-}
-
-/* contenedores 70-30*/
-.contenedorpadre {
-  width: 99vw;
-
-  display: flex;
-  flex-direction: row;
-}
-
-/* contenedores 70-30*/
-/* contenedores 70-30*/
-.contenedorpadre {
-  max-width: 100%;
-  display: flex;
-  flex-direction: row;
-  overflow-x: hidden; /* Oculta el desplazamiento horizontal */
-}
-
-.conteiner1 {
-  /*control de scroll*/
-  
-  padding: 5px;
-  margin:15px;
-  position: relative;
-  width: 870px;
-  height: 500px;
-  margin: 0 auto;
-  
-  justify-content: center;
-}
-.conteiner2 {
-  overflow: auto;
-  max-width: 100%;
-  max-height: 100vh;
-  margin: 0 auto;
-  padding: 20px;
-
-  display: flex;
-  height: 100vh;
-  width: 30vw;
-  background-color: #0097b2;
-  justify-content: center;
-  padding: center;
-  margin: 3px;
-  align-items: center;
-}
-.hexagon {
-  position: absolute;
-  width: 100px;
-  height: 55px;
-  cursor: move;
-  
-}
-
-.hexagon1 {
- margin-left: 156px;
-  width: 150px;
-  height: 150.94px;
-  background: #0097B2;
-  position: relative;
-  display: inline-block;
-  margin: 0px;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-}
-
-.hexagon2{
-  left: 0px;
-  width: 150px;
-  height: 150.94px;
-  background: #0097B2;
-  position: relative;
-  display: inline-block;
-  margin: 0px;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-}
-.hexagon3{
-  left: 0px;
-  width: 150px;
-  height: 150.94px;
-  background: #0097B2;
-  position: relative;
-  display: inline-block;
-  margin: 0px;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-}
-.hexagon4{
-  left: 0px;
-  width: 150px;
-  height: 150.94px;
-  background: #0097B2;
-  position: relative;
-  display: inline-block;
-  margin: 0px;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-}
-.hexagon5{
-  left: 0px;
-  width: 150px;
-  height: 150.94px;
-  background: #0097B2;
-  position: relative;
-  display: inline-block;
-  margin: 0px;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
