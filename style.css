@@ -1,96 +1,132 @@
-* {
-  box-sizing: border-box;
+/* Estilos generales */
+* body {
+  overflow: hidden;
   margin: 0;
   padding: 0;
-}
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  min-height: 100%;
-  font-size: 1.2rem;
-  
-}
-html {
-  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #1f2627;
 }
 
-.grid-conteiner * {
- 
-  border-radius: 4px;
-  padding: 10px;
-  text-align: center;
- 
-}
-.header {
-  grid-area: header; 
-  background-color: chocolate;
-  
-}
-.navbar {
-  grid-area: navbar;
+/* Estilos de la barra de menú */
+
+.barramenu {
   background-color: #05869d;
-}
-.sidebar {
-  grid-area: sidebar;
-  background-color: #0097b2;
-}
-.main {
-  grid-area: main;
-  background-color: rgb(42, 45, 42);
-}
-.footer {
-  grid-area: footer;
-  background-color: #0097B2;
-}
-/*GRID PARA MINIMIZAR*/
-.grid-conteiner {
-  display: grid;
-  gap: 10px;
-  grid-template-areas:
-    "navbar"
-    "header"
-    "sidebar"
-    "main"
-    "footer";
+  height: 50px;
 }
 
-@media (min-width: 650px) {
-  .grid-conteiner {
-    grid-template-columns: 1000px auto;
-    grid-template-rows: 100px 50px auto 100px;
-    background-color: rgb(95, 95, 186);
-    display: grid;
-    gap: 10px;
-    grid-template-areas:
-      "navbar navbar"
-      "header header"
-      "main sidebar"
-      "footer footer";
-  }
-}
-.plain-link,
-.plain-button {
-  /* Restaurar estilos por defecto */
-  background: none;
-  border: black;
-  color: inherit;
-  font: inherit;
-  padding: 0;
-  cursor: pointer;
-  text-decoration: none;
+/* Estilos del contenedor principal */
+
+.contenedorpadre {
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-/* Estilos adicionales para el contenedor dropdown */
-.dropdown {
+/* Estilos de los contenedores internos */
+
+.contenedor1 {
+  width: 956.2px;
+  height: 600px;
+  background-color: #1f2627;
+  margin: 5px;
+  box-shadow: 0 2px 6px rgb(0, 247, 255);
+}
+.hexagon-container {
+  width: 150px;
+  height: 150px;
   position: relative;
-  display: inline-block;
 }
-
-.dropdown-content {
-  display: none;
+.hexagon {
+  margin-top: 228px;
+  margin-left: 350px;
+  width: 100%;
+  height: 100%;
+  background-color: #ff0000;
   position: absolute;
-  z-index: 1;
+  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+}
+.hexagon1 {
+  margin-top: 58px;
+  margin-left: 350px;
+  width: 100%;
+  height: 100%;
+  background-color: #29538d;
+  position: absolute;
+  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
 }
 
-.dropdown-content a {
-  display: block;
+.hexagon2 {
+  margin-top: 140px;
+  margin-left: 474px;
+  width: 100%;
+  height: 100%;
+  background-color: #01122a;
+  position: absolute;
+  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+}
+
+.hexagon3 {
+  margin-top: 313px;
+  margin-left: 474px;
+  width: 100%;
+  height: 100%;
+  background-color: #177910;
+  position: absolute;
+  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+}
+.hexagon4 {
+  margin-top: 140px;
+  margin-left: 226px;
+  width: 100%;
+  height: 100%;
+  background-color: #d2530f;
+  position: absolute;
+  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+}
+.hexagon5 {
+  margin-top: 313px;
+  margin-left: 226px;
+  width: 100%;
+  height: 100%;
+  background-color: #030fad;
+  position: absolute;
+  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+}
+.hexagon6 {
+  margin-top: 396px;
+  margin-left: 350px;
+  width: 100%;
+  height: 100%;
+  background-color: #1cd20f;
+  position: absolute;
+  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 28px solid #ff0000;
+}
+
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 28px solid #ff0000;
+}
+
+.contenedor2 {
+  width: 410.8px;
+  height: 600px;
+  background-color: #0097b2;
+  margin: 5px;
 }
