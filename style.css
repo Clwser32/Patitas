@@ -240,13 +240,13 @@ button {
   opacity: 0%;
   top: 0;
   left: 0;
-
   margin-top: 50px;
   margin-left: 80px;
- 
+  
 }
 .show{
   pointer-events: auto;
+  z-index: 9;
   opacity: 1;
 }
 
