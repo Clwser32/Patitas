@@ -33,6 +33,7 @@ body {
 /* Estilos de los contenedores internos */
 
 .contenedor1 {
+  border-radius: 20px;
   width: 956.2px;
   height: 600px;
   background-color: #1f2627;
@@ -135,6 +136,7 @@ body {
   height: 600px;
   background-color: #0097b2;
   margin: 5px;
+  border-radius: 20px;
 }
 .nombre1 {
   margin-top: 210px;
