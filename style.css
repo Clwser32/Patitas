@@ -10,7 +10,7 @@
 /* Estilos de la barra de menú */
 
 .barramenu {
-  background-color: #05869d;
+  background-color: #107688;
   height: 50px;
 }
 
@@ -129,4 +129,81 @@
   height: 600px;
   background-color: #0097b2;
   margin: 5px;
+}
+.nombre1{
+  margin-top: 210px;
+  margin-left: 375px;
+  box-sizing: border-box;
+  background-color: #0097b2;
+  width: 100px;
+  height: 30px;
+  position: absolute;
+  justify-content: center;
+  z-index: 7;
+}
+.nombre2{
+  margin-top: 40px;
+  margin-left: 375px;
+  box-sizing: border-box;
+  background-color: #0097b2;
+  width: 100px;
+  height: 30px;
+  position: absolute;
+  justify-content: center;
+  z-index: 7;
+}
+.nombre3{
+  margin-top: 370px;
+  margin-left: 375px;
+  box-sizing: border-box;
+  background-color: #0097b2;
+  width: 100px;
+  height: 30px;
+  position: absolute;
+  justify-content: center;
+  z-index: 7;
+}
+.nombre4{
+  margin-top: 290px;
+  margin-left: 500px;
+  box-sizing: border-box;
+  background-color: #0097b2;
+  width: 100px;
+  height: 30px;
+  position: absolute;
+  justify-content: center;
+  z-index: 7;
+}
+.nombre5{
+  margin-top: 120px;
+  margin-left: 500px;
+  box-sizing: border-box;
+  background-color: #0097b2;
+  width: 100px;
+  height: 30px;
+  position: absolute;
+  justify-content: center;
+  z-index: 7;
+}
+.nombre6{
+  margin-top: 290px;
+  margin-left: 250px;
+  box-sizing: border-box;
+  background-color: #0097b2;
+  width: 100px;
+  height: 30px;
+  position: absolute;
+  justify-content: center;
+  z-index: 7;
+}
+.nombre7{
+  margin-top: 120px;
+  margin-left: 250px;
+  box-sizing: border-box;
+  background-color: #0097b2;
+  width: 100px;
+  height: 30px;
+  position: absolute;
+  justify-content: center;
+  z-index: 7;
 }
