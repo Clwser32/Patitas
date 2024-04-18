@@ -28,7 +28,7 @@ body {
   display: flex;
   flex-direction: row;
   padding: 10px;
-  }
+}
 
 /* Estilos de los contenedores internos */
 
@@ -44,7 +44,7 @@ body {
   justify-content: space-between;
   width: calc(70%);
   height: 90vh;
-  overflow-y:scroll ;
+  overflow-y: scroll;
   box-sizing: border-box;
 }
 /* Estilos para el contenedor2 */
@@ -59,7 +59,6 @@ body {
 
 /* Estilos para las columnas */
 .hexagon {
- 
   margin: 10px;
   max-width: calc(25% - 5px);
   height: 150px;
@@ -78,17 +77,15 @@ en columnas y cada contenedor tome el 100% de la pantalla en esa resolucuin */
   .contenedorpadre {
     flex-direction: column;
     align-items: center;
-    gap: 5px ;
-
+    gap: 5px;
   }
-.contenedor1{
-  overflow-y: scroll;
-  width: 100%;
-}
-.contenedor2{
-  
-  width: 100%;
-}
+  .contenedor1 {
+    overflow-y: scroll;
+    width: 100%;
+  }
+  .contenedor2 {
+    width: 100%;
+  }
 
   .hexagon {
     width: calc(50% - 20px);
@@ -96,23 +93,30 @@ en columnas y cada contenedor tome el 100% de la pantalla en esa resolucuin */
   }
 }
 
-
 /*javascrip ventana*/
 /* Estilos para la ventana emergente */
 
 @import url("https://fonts.googleapis.com/css?family=poppins&display=swap");
 
 button {
-  margin-top: 5px;
-  margin-left: 10px;
-  background-color: #00ffff;
-  border: 0;
-  border-radius: 20px 20px 20px 20px;
-  box-shadow: #0097b2;
+  padding: 10px 20px;
+  background-color: #00f3eb;
   color: rgb(0, 0, 0);
-  font-size: 14px;
-  padding: 10px 15px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  cursor: pointer;
+
+  position: relative;
+  clip-path: polygon(0 0, 0 0, 100% 0, 100% 75%, 75% 100%, 0% 100%);
+  transition: clip-path 0.8s;
 }
+.button .open:hover::before {
+margin: 0;
+}
+
 .modal-container {
   display: flex;
   background-color: rgb(0, 0, 0);
@@ -123,8 +127,10 @@ button {
   opacity: 0%;
   top: 0;
   left: 0;
+
   margin-top: 50px;
   margin-left: 80px;
+  cursor: pointer;
 }
 .show {
   pointer-events: auto;
