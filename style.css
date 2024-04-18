@@ -10,6 +10,8 @@ body {
   background-color: #1f2627;
   justify-content: center;
   align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
 /* Estilos de la barra de menú */
@@ -24,78 +26,76 @@ body {
 
 .contenedorpadre {
   display: flex;
-  flex-wrap: row;
-  justify-content: space-between;
+  flex-direction: row;
   padding: 10px;
-}
+  }
 
 /* Estilos de los contenedores internos */
 
+/* Estilos para el contenedor1 */
 .contenedor1 {
   border-radius: 20px;
-  width: 70%;
   background-color: #1f2627;
-  margin: 5px;
   box-shadow: 0 2px 6px rgb(0, 247, 255);
-  padding-bottom: 86.602%;
+  height: 100%;
+  margin-right: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: calc(70%);
+  height: 90vh;
+  
+  box-sizing: border-box;
 }
+/* Estilos para el contenedor2 */
 .contenedor2 {
+  box-sizing: border-box;
   width: 30%;
+  height: 90vh;
   border-radius: 20px;
   background-color: #0eb9d3;
-  margin: 5px;
-  box-shadow: 0 2px 6px rgb(0, 247, 255);
-  padding-bottom: 86.602%;
+  box-shadow: 0 2px 6px rgb(8, 28, 11);
 }
 
-/* Estilos específicos para pantallas más pequeñas */
-@media screen and (max-width: 600px) {
-  .contenedorpadre {
-    flex-direction: column;
-
-  }
-.contenedor1{
-  width: 100%;
-}
-.contenedor2{
-  width: 100%;
-}
-}
-/* Estilos específicos para pantallas más pequeñas */
-
-.hexagon-container {
-  width: 150px;
-  height: 150px;
-  position: relative;
-}
-
+/* Estilos para las columnas */
 .hexagon {
-  width: 100%;
-  height: 100%;
-  background-color: #ff0000;
-  position: absolute;
+ 
+  margin: 10px;
+  max-width: calc(25% - 5px);
+  height: 150px;
+  width: 150px;
+  background-color: #00f3eb;
+  border-radius: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 6px rgb(27, 48, 48);
   clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
 }
 
-.hexagon:before,
-.hexagon:after {
-  content: "";
-  position: absolute;
-  width: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
+/* Aqui fuerza que la pantalla al ser menor que 600 pixeles el contenedorpadre se ajuste
+en columnas y cada contenedor tome el 100% de la pantalla en esa resolucuin */
+
+@media screen and (max-width: 500px) {
+  .contenedorpadre {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px ;
+
+  }
+.contenedor1{
+  overflow-y: scroll;
+  width: 100%;
+}
+.contenedor2{
+  
+  width: 100%;
 }
 
-.hexagon:before {
-  bottom: 100%;
-  border-bottom: 28px solid #ff0000;
+  .hexagon {
+    width: calc(50% - 20px);
+    max-width: calc(50% - 25%);
+  }
 }
 
-.hexagon:after {
-  top: 100%;
-  width: 0;
-  border-top: 28px solid #ff0000;
-}
 
 /*javascrip ventana*/
 /* Estilos para la ventana emergente */
