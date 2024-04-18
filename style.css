@@ -44,7 +44,7 @@ body {
   justify-content: space-between;
   width: calc(70%);
   height: 90vh;
-  
+  overflow-y:scroll ;
   box-sizing: border-box;
 }
 /* Estilos para el contenedor2 */
