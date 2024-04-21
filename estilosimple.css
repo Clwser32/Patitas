@@ -1,0 +1,263 @@
+
+/* .barraDeBusqueda */
+.barraDeBusqueda {
+    width: 100%;
+    height: auto;
+    border: 1px solid blue;
+    box-shadow: 3px 3px aqua;
+    background: url(imagen/MIIz.gif);
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 2%;
+}
+.logo{
+    margin-left: 1%;
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+    border: 2px solid rgb(62, 82, 168);
+    background-color: aliceblue;
+    background: url(img/images.jpg);
+    background-size: cover;
+    position: absolute;
+}
+.sesion{
+    border: 1px solid black;
+    margin-left: 90%;
+    margin-top: 1%;
+    border-radius: 15px 0 15px 0;
+    box-shadow: 1px 1px aqua;
+    position: absolute;
+}
+.ayuda{
+    border: 1px solid black;
+    margin-left: 85%;
+    margin-top: 1%;
+    border-radius: 15px 0 15px 0;
+    box-shadow: 1px 1px aqua;
+    position: absolute;
+}
+.requisitos-adop{
+    margin-top: 6%;
+    margin-bottom: 1%;
+    margin-left: 3%;
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-left: 1px solid black;
+    box-shadow: 1px 1px aqua;
+    border-radius: 15px 0 15px 0;
+}
+/* vista previa contenedores */
+.vistas{
+    width: 73%;
+    height: 550px;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    position: relative;
+}
+/* panal vista previa */
+ /* panal1 */
+ .perrospequeños{
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 4%;
+ }
+ .contenedorperro1{
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+ }
+.foto1{
+ border-radius: 20%;
+ box-shadow: 1px 1px black;
+ width: 50px;
+ height: 50px;
+ border: 2px solid black;
+ margin-top: 2%;
+ margin-left: 3%;
+ transform: rotate(45deg)
+ 
+}
+.foto2{
+    border-radius: 20%;
+    box-shadow: 1px 1px black;
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    margin-top: 1%;
+    margin-left: 11%;
+    transform: rotate(45deg)
+    
+   }
+.foto3{
+    border-radius: 20%;
+    box-shadow: 1px 1px black;
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    margin-top: 1%;
+    margin-left: 3%;
+    transform: rotate(45deg)
+    
+   }
+.contenedor-panal2{
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    position: absolute;
+    margin-top: 30%;
+    margin-right: 100%;
+}
+
+ /* panal2 */
+ .contenedorperro2{
+    width: 50%;
+    height: 280px;
+    overflow: hidden;
+    border: 1px solid black;
+ }
+.foto11{
+background: url();
+background-size: cover;
+
+border-radius: 20%;
+box-shadow: 1px 1px black;
+width: 50px;
+height: 50px;
+border: 2px solid black;
+margin-top: 2%;
+margin-left: 1%;
+transform: rotate(45deg)
+
+}
+.foto12{
+    background: url();
+    background-size: cover;
+    
+    border-radius: 20%;
+    box-shadow: 1px 1px black;
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    margin-top: 1%;
+    margin-left: 9%;
+    transform: rotate(45deg)
+    
+    }
+.foto13{
+    background: url();
+    background-size: cover;
+    
+    border-radius: 20%;
+    box-shadow: 1px 1px black;
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    margin-top: 1%;
+    margin-left: 1%;
+    transform: rotate(45deg)
+    
+    }
+    /* eventos */
+.texevento{
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    border:  1px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px aqua;
+    background-color: rgb(235, 138, 102);
+}
+.eventos {
+    background-color: rgb(127, 247, 247);
+    border: 2px solid black;
+    border-radius: 20px;
+    overflow: auto;
+    box-shadow: 3px 3px aqua;
+    width: 24%;
+    height: 300px;
+    margin-left: 76%;
+}
+.eventos{
+    top: 25%;
+    position: sticky;
+   
+}
+/* requisitos de adopcion */
+.contenedor-requisito-adopsion{
+    display: flex;
+    margin-top: 5%;
+}
+.texto-requisito-adopcion{
+    text-align: center;
+    border: 1px solid black;
+    box-shadow: 2px 2px aqua;
+    border-radius: 10px;
+    margin-top: 45%;
+}
+.imagen{
+    width: 40%;
+    height: 400px;
+    border: 1px solid black;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.texto-requisitos{
+    margin-left: 5%;
+}
+.textos-contenedor{
+    width: 50%;
+    display: block;
+}
+.numeracion{
+    border: 1px solid black;
+    box-shadow: 2px 2px aqua;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 8%;
+    margin-top: 5%;
+    background-color: rgb(77, 77, 245);
+    overflow: hidden;
+    text-align: center;
+}
+.numers{
+    color: aliceblue;
+    margin: auto;
+}
+
+/* animate a adoptar */
+.texto-animate-adopcion{
+    margin-top: 10%;
+    text-align: center;
+    border: 1px solid black;
+    box-shadow: 2px 2px aqua;
+    border-radius: 10px;
+}
+.animate-adoptar-conteiner{
+    display: flex;
+    margin-top: 5%;
+}
+.animate-doctar-conteiner2{
+    border: 1px solid black;
+    width: 40%;
+    height: 400px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    float: left;
+}
+.animate-doctar-conteiner3{
+    width: 50%;
+    display: block;
+    float: right;
+}
+.textadop{
+    margin-left: 5%;
+    width: 60%;
+}
+.parafos-animateadoptar-conteiner{
+    width: 65%;
+    margin-left: 3%;
+}

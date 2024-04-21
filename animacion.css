@@ -1,0 +1,127 @@
+/* animacion bienvenida */
+.bienvenida{
+    width: 100%;
+    margin-bottom: 2%;
+    
+}
+.bienvenida2{
+    text-align: center;
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 20px 0 20px 0;
+    box-shadow: 3px 3px aqua;
+    overflow: auto;
+    margin: auto;
+}
+/* barra de busqueda */
+.barraDeBusqueda {
+    top: 1px;
+    position: sticky;
+    z-index: 99;
+}
+/* contenido extra de vista previa oculto */
+.buton-vermas{
+    height: 40px;
+    margin-top: 1%;
+    margin-right: 1%;
+    width: 70px;
+    border-radius: 15px;
+}
+.contenidoOculto {
+    display: none;
+    width: 70%;
+    height: 200px;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 15px;
+    overflow: auto;
+}
+.text-de-contenidovista-oculto{
+text-align: center;
+}
+.mm{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    margin-left: 1%;
+}
+.p{
+    width: 200px;
+    overflow: hidden;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-radius: 10px;
+}
+.cmm{
+    display: flex;
+}
+.boton-oculto-vista{
+    border-radius: 8px;
+    margin-left: 70%;
+}
+/* ventana emergente de inicio */
+.logintex{
+    margin-left: 45%;
+    position: absolute;
+}
+.modal-container {
+    z-index: 9999; 
+}
+.modal-container {
+    width: 40%;
+    height: 300px;
+    overflow: hidden;
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: rgb(125, 228, 228);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.correo,.contraceña {
+    margin-top: 30%;
+    margin-left: 45%;
+    border: none;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0);
+}
+::placeholder{
+    color: black;
+}
+.contraceña{
+    margin-top: 10%;
+}
+.Cerrar{
+    margin-top: 25%;
+    margin-left: 13%;
+    position: absolute;
+    border-radius: 5px;
+}
+.iniciar{
+    margin-top: 25%;
+    position: absolute;
+    border-radius: 5px;
+}
+/* eventos mostrar */
+.boton-evento-mostrar{
+    margin-left: 85%;
+    top: 20%;
+    position: sticky;
+}
+.boton-evento-mostrar{
+    border: none;
+    border-bottom: 2px solid aqua;
+    border-left: 2px solid aqua;
+    border-radius: 5px;
+    height: 25px;
+    overflow: hidden;
+}
+.-evento-mostrar{
+    color: black;
+    margin: auto;
+    height: 5px;
+}

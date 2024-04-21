@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilosimple.css">
+    <link rel="stylesheet" href="animacion.css">
+    <script src="funciones.js"></script>
+    <title>Document</title>
+</head>
+<!-- Otros elementos en el encabezado -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+<body>
+
+     <!-- barra de busqueda -->
+ <div class="barraDeBusqueda">
+    <div class="logo"></div>
+    <button type="submit" class="sesion" onclick="openPopup()">iniciar sesion</button>
+    <button class="ayuda">ayuda</button>
+    <button  class="requisitos-adop"> <a style="text-decoration: none;" href="#requisitos-de-adopcion">requisitos de adopcion</a></button>
+ </div>
+ <button class="boton-evento-mostrar" id="toggleButton" onclick="toggleEventos()"><h4 class="-evento-mostrar">Mostrar/Ocultar eventos</h4></button>
+  <!-- eventos contenedor -->
+<div id="eventosContainer" class="eventos">
+    <h3 class="texevento">Aquí se estarán mostrando las próximas actividades</h3>
+
+    <div class="cmm">
+        <div class="mm"></div>
+        <p class="p">Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
+       </div>
+       <div class="cmm">
+        <div class="mm"></div>
+        <p class="p">Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
+       </div>
+       <div class="cmm">
+        <div class="mm"></div>
+        <p class="p">Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
+       </div>
+       <div class="cmm">
+        <div class="mm"></div>
+        <p class="p">Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
+       </div>
+       <div class="cmm">
+        <div class="mm"></div>
+        <p class="p">Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
+       </div>
+       <div class="cmm">
+        <div class="mm"></div>
+        <p class="p">Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
+       </div>
+       <div class="cmm">
+        <div class="mm"></div>
+        <p class="p">Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
+       </div>
+       <div class="cmm">
+        <div class="mm"></div>
+        <p class="p">Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
+       </div>
+</div>
+   <!-- ventana emeregente -->
+<div class="modal-container" id="modalContainer" style="display: none;">
+    <h1 class="logintex">login</h1>
+    <div class="modal-content">
+        <form method="POST" action="">
+            <i class="fas fa-key" style="font-size: 24px; color: rgb(0, 0, 0);margin-left: 25%; position: absolute; margin-top: 32%;"></i>
+            <i class="fas fa-envelope" style="font-size: 24px; color: blue; position: absolute; margin-left: 25%; margin-top: 21%;"></i>
+            <input class="correo" type="text" name="correo" placeholder="Correo" required>
+            <input class="contraceña" type="password" name="contrasena" placeholder="contraceña" required>
+            <button class="Cerrar" type="button" onclick="closePopup()">Cerrar</button>
+            <button class="iniciar" type="submit">Iniciar</button>
+        </form>
+    </div>
+</div>
+<!-- texto de vienvenida -->
+ <div class="bienvenida">
+   <div class="bienvenida2">
+      <span class="carousel"><h1 class="carruselBienvenida">Bienvenidos a nuestra página</h1></span>
+     </div>
+ </div>
+ <!-- vista previa contenedor -->
+  <div class="vistas">
+    <!-- estilo panal -->
+    <div class="contenedorperro1">
+        <h4 class="perrospequeños">razas pequeñas</h4>
+        <div class="foto1"></div>
+        <div class="foto2"></div>
+        <div class="foto3"></div>
+    </div>
+
+    <div class="contenedor-panal2">
+        <h4 class="perrospequeños">razas pequeñas</h4>
+        <div class="foto1"></div>
+        <div class="foto2"></div>
+        <div class="foto3"></div>
+    </div>
+    <button class="buton-vermas" onclick="mostrarContenido()">Ver más</button>
+    <div class="contenidoOculto">
+        <!-- Contenido adicional-->
+        <h3 class="text-de-contenidovista-oculto">informacion extra de mascotas</h3>
+       <div class="cmm">
+        <div class="mm"></div>
+        <p class="p">Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
+       </div>
+       <div class="cmm">
+        <div class="mm"></div>
+        <p class="p">Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
+       </div>
+       <div class="cmm">
+        <div class="mm"></div>
+        <p class="p">Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
+       </div>
+       <div class="cmm">
+        <div class="mm"></div>
+        <p class="p">Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
+       </div>
+       <div class="cmm">
+        <div class="mm"></div>
+        <p class="p">Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
+       </div>
+       <button class="boton-oculto-vista" onclick="">segir virndo</button>
+    </div>
+ </div>
+ <!-- requisitos de adopcion -->
+ <h1  id="requisitos-de-adopcion"  class="texto-requisito-adopcion">¿CON GANAS DE SUMAR UN INTEGRANTE A TU FAMILIA?</h1>
+<div class="contenedor-requisito-adopsion">
+    <div class="imagen"></div>
+    <div class="textos-contenedor">
+        <h3 class="texto-requisitos">REQUISITOS PARA ADOPTAR</h3>
+        <div class="numeracion"><h2 class="numers">1</h2></div>
+        <div class="numeracion"><h2 class="numers">2</h2></div>
+        <div class="numeracion"><h2 class="numers">3</h2></div>
+        <div class="numeracion"><h2 class="numers">4</h2></div>
+        <div class="numeracion"><h2 class="numers">5</h2></div>
+    </div>
+</div>
+ </div>
+ <!-- texto y preguntas para que se animen a adoptar contenedores -->
+ <h1  id="animate-adopcion"  class="texto-animate-adopcion">ANIMATE A ADOPTAR</h1>
+ <div class="animate-adoptar-conteiner">
+    <div class="animate-doctar-conteiner2"></div>
+    <div class="animate-doctar-conteiner3">
+        <h3 class="textadop">PREGUNTAS FRECUENTES SOBRE
+            ADOPCIÓN DE MASCOTAS</h3>
+          <div class="parafos-animateadoptar-conteiner">
+              <p>En nuetra pagina conectamos humanos con su mascota. Sabemos la importancia de que no haya ningún animal sin familia y por eso apoyamos y ayudamos a rescatistas y fundaciones todos los días para lograrlo.</p>
+
+               <p> Si estás pensando sumar un amigo peludo tenés que saber el compromiso que esto implica.No sólo será tu compañía sino un integrante más de la familia. Por lo que te recomendamosplanifiques bien su llegada, asegúrate que todos estén de acuerdo y que en tu edificio o casa se permitan mascotas. Tené en cuenta los gastos mensuales relacionados, cuidados generales que necesitará para que se encuentre saludable y cómodo y con quién dejarlo en caso de salir de vacaciones.</p>
+                
+               <p> Te dejamos acá un resumen de las preguntas que recibimos siempre así te ayudamos a prepararte en lo que se viene</p>
+          </div>
+    </div>
+ </div>
+ <!-- pie de pagina -->
+ <footer class="sobre-nosotros">
+   <div></div>
+ </footer>
+</body>
+</html>
