@@ -9,23 +9,38 @@
 
   <body>
     <div class="barramenu">
-      <button id="open">Editar</button>
-      <div class="modal-container" id="modal_container">
-        <div class="modal">
-          <h1>ventana modal</h1>
-          <form id="formulario">
-            <input type="file" id="imagen" accept="image/*">
-            <button type="submit">Agregar Imagen</button>
-          </form>
-          
-          <button id="close">cerrar</button>
+      <!--login-->
+      <div class="center">
+        <button id="showlogin">Login</button>
+      </div>
+      <div class="popup">
+        <div class="closebtn">&times;</div>
+        <div class="form">
+          <h2>LOGIN</h2>
+          <div class="fromelement">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Enter email" />
+          </div>
+          <div class="fromelement">
+            <label for="pass">Password</label>
+            <input type="text" id="password" placeholder="Enter pass" />
+          </div>
+          <div class="fromelement">
+            <input type="checkbox" id="rememberme" />
+            <label for="rememberme">Remember me</label>
+          </div>
+          <div class="fromelement">
+            <button>SIGN IN</button>
+          </div>
+          <div class="fromelement">
+            <a href="#">Forgot password</a>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="contenedorpadre">
       <div class="contenedor1">
-        
         <div class="hexagon"></div>
         <div class="hexagon"></div>
         <div class="hexagon"></div>
@@ -41,12 +56,10 @@
         <div class="hexagon"></div>
         <div class="hexagon"></div>
         <div class="hexagon"></div>
-        
-       
+      </div>
+      <div class="contenedor2"></div>
     </div>
-    <div class="contenedor2"></div>
-    </div>
-    
-    <script src="ventana.js"></script>
+
+    <script src="funciones.js"></script>
   </body>
 </html>

@@ -1,0 +1,215 @@
+/*css de pagina.html*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+  margin: 0;
+  padding: 0;
+  background: #1f2627;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilos de la barra de menú */
+
+.barramenu {
+  display: flex;
+  background-color: #107688;
+  height: 50px;
+}
+.center {
+  position: absolute;
+  top: 4%;
+  left: 95%;
+  transform: translate(-50%, -50%);
+}
+.center button {
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #222;
+  background: #10b8d6;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.popup {
+  position: absolute;
+  top: -150%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(1.25);
+  width: 380px;
+  padding: 20px 30px;
+  background: #1f2627;
+  box-shadow: 0px 2px 5px #17d9fb;
+  border-radius: 15px;
+  color: #ffffff;
+  transition: top 0ms ease-in-out 200ms, opacity 0ms ease-in-out 0ms,
+    transform 200ms ease-in-out 0ms;
+}
+.popup.active {
+  top: 50%;
+  z-index: 2;
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  transition: top 0ms ease-in-out 0ms, opacity 0ms ease-in-out 0ms,
+    transform 200ms ease-in-out 0ms;
+}
+.popup .closebtn {
+  position: absolute;
+  top: 10px;
+  left: 350px;
+  width: 15px;
+  height: 15px;
+  background: #888;
+  color: #ffffff;
+  text-align: center;
+  line-height: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.popup .form h2 {
+  text-align: center;
+  color: #ffffff;
+  margin: 10px 0px 20px;
+}
+.popup .form .fromelement {
+  margin: 15px 0px;
+}
+.popup .form .fromelement label {
+  font-size: 14px;
+  color: #ffffff;
+}
+.popup .form .fromelement input[type="text"],
+.popup .form .fromelement input[type="text"] {
+  margin-top: 5px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+}
+.popup .form .fromelement input[type="checkbox"] {
+  margin-right: 5px;
+}
+.popup .form .fromelement button {
+  width: 100%;
+  height: 45%;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #ffffff;
+  background: #1f2627;
+  box-shadow: 1px 2px 5px #17d9fb;
+}
+.popup .form .fromelement a {
+  display: block;
+  text-align: right;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Estilos del contenedor principal */
+
+.contenedorpadre {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+}
+.contenedor1 {
+  display: block;
+  border-radius: 20px;
+  background-color: #1f2627;
+  box-shadow: 0 2px 6px rgb(0, 247, 255);
+  height: 100%;
+  margin-right: 3px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: calc(70%);
+  height: 90vh;
+  overflow-y: scroll;
+  
+  box-sizing: border-box;
+  gap: 10px;
+}
+/* Estilos para el contenedor2 */
+.contenedor2 {
+  z-index: 2;
+  display: block;
+  box-sizing: border-box;
+  width: 30%;
+  height: 90vh;
+  border-radius: 20px;
+  background-color: #0eb9d3;
+  box-shadow: inset 0 2px 6px rgb(8, 28, 11);
+  color: #ffffff;
+}
+
+
+/*scrolls estilos*/
+body::-webkit-scrollbar {
+  width: 8px;
+}
+body::-webkit-scrollbar-track:vertical {
+  background-color: #181313;
+  border-radius: 15px;
+  box-shadow: inset 0 2px 5px #00f3eb;
+}
+body::-webkit-scrollbar-thumb:vertical {
+  background-color: #107688;
+  border-radius: 15px;
+  box-shadow: inset 0 1px 5px #00f3eb;
+}
+
+.contenedor1::-webkit-scrollbar {
+  width: 10px;
+  height: 120px;
+}
+.contenedor1::-webkit-scrollbar-track:vertical {
+  background-color: #181313;
+  border-radius: 15px;
+  box-shadow: inset 0 2px 5px #00f3eb;
+}
+.contenedor1::-webkit-scrollbar-thumb:vertical {
+  background-color: #00f3eb;
+}
+
+/* Aqui fuerza que la pantalla al ser menor que 600 pixeles el contenedorpadre se ajuste
+en columnas y cada contenedor tome el 100% de la pantalla en esa resolucuin */
+
+@media screen and (max-width: 500px) {
+  .contenedorpadre {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  .contenedor1 {
+    overflow-y: scroll;
+    width: 100%;
+  }
+  .contenedor2 {
+    width: 100%;
+  }
+
+  .hexagon {
+    width: calc(50% - 20px);
+    max-width: calc(50% - 25%);
+  }
+}
+
+/*javascrip ventana*/
+/* Estilos para la ventana emergente */
