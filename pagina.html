@@ -44,7 +44,60 @@
     <div class="contenedorpadre">
       <div class="contenedor1"></div>
 
-      <div class="contenedor2"></div>
+      <div class="contenedor2">
+        <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Eventos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre del Evento</th>
+                    <th>Fecha</th>
+                    <th>Lugar</th>
+                </tr>
+            </thead>
+            <tbody id="event-list">
+                <!-- Aquí se mostrarán los eventos -->
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        // Datos de ejemplo de eventos
+        var eventos = [
+            { nombre: "Evento 1", fecha: "2024-05-01", lugar: "Lugar 1" },
+            { nombre: "Evento 2", fecha: "2024-05-15", lugar: "Lugar 2" },
+            { nombre: "Evento 3", fecha: "2024-06-01", lugar: "Lugar 3" }
+        ];
+
+        // Mostrar los eventos en la tabla
+        var eventList = document.getElementById("event-list");
+        eventos.forEach(function(evento) {
+            var newRow = document.createElement("tr");
+            newRow.innerHTML = `
+                <td>${evento.nombre}</td>
+                <td>${evento.fecha}</td>
+                <td>${evento.lugar}</td>
+            `;
+            eventList.appendChild(newRow);
+        });
+    </script>
+</body>
+</html>
+
+       </div>
+      
+
       </div>
 <a href="index.html">hola</a>
       <footer class="sobre-nosotros"></footer>

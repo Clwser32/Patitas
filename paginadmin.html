@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+
+  <body>
+    <div class="barramenu">
+      <!--login-->
+      <div class="center">
+        <button id="showlogin">Login</button>
+      </div>
+      <div class="popup">
+        <div class="closebtn">&times;</div>
+        <div class="form">
+          <h2>LOGIN</h2>
+          <div class="fromelement">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Enter email" />
+          </div>
+          <div class="fromelement">
+            <label for="pass">Password</label>
+            <input type="text" id="password" placeholder="Enter pass" />
+          </div>
+          <div class="fromelement">
+            <input type="checkbox" id="rememberme" />
+            <label for="rememberme">Remember me</label>
+          </div>
+          <div class="fromelement">
+            <button>SIGN IN</button>
+          </div>
+          <div class="fromelement">
+            <a href="#">Forgot password</a>
+          </div>
+        </div>
+      </div>
+
+      <!--register-->
+
+    </div>
+    <div class="contenedorpadre">
+      <div class="contenedor1">
+       
+      </div>
+
+      <div class="contenedor2">
+        <!DOCTYPE html>
+        <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Panel de Administrador - Eventos</title>
+            <style>
+         
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <h2>Panel de Administrador - Eventos</h2>
+                <form id="event-form">
+                    <label for="event-name">Nombre del Evento:</label><br>
+                    <input type="text" id="event-name" name="event-name"><br>
+                    <label for="event-date">Fecha:</label><br>
+                    <input type="date" id="event-date" name="event-date"><br>
+                    <label for="event-location">Lugar:</label><br>
+                    <input type="text" id="event-location" name="event-location"><br><br>
+                    <button type="submit" class="btn">Agregar Evento</button>
+                </form>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre del Evento</th>
+                            <th>Fecha</th>
+                            <th>Lugar</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="event-list">
+                        <!-- Aquí se mostrarán los eventos -->
+                    </tbody>
+                </table>
+            </div>
+       
+            <script>
+                // Función para agregar un nuevo evento
+                document.getElementById("event-form").addEventListener("submit", function(event) {
+                    event.preventDefault(); // Evitar que el formulario se envíe
+       
+                    var eventName = document.getElementById("event-name").value;
+                    var eventDate = document.getElementById("event-date").value;
+                    var eventLocation = document.getElementById("event-location").value;
+       
+                    if (eventName && eventDate && eventLocation) {
+                        // Crear un nuevo elemento de fila en la tabla
+                        var newRow = document.createElement("tr");
+                        newRow.innerHTML = `
+                            <td>${eventName}</td>
+                            <td>${eventDate}</td>
+                            <td>${eventLocation}</td>
+                            <td>
+                                <button class="btn">Editar</button>
+                                <button class="btn">Eliminar</button>
+                            </td>
+                        `;
+                        document.getElementById("event-list").appendChild(newRow);
+       
+                        // Limpiar los campos del formulario después de agregar el evento
+                        document.getElementById("event-form").reset();
+                    } else {
+                        alert("Por favor, complete todos los campos.");
+                    }
+                });
+            </script>
+        </body>
+        </html>
+      </div>
+      
+
+      </div>
+<a href="index.html">hola</a>
+      <footer class="sobre-nosotros"></footer>
+      <script src="funciones.js"></script>
+    </div>
+  </body>
+</html>
