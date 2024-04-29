@@ -9,44 +9,61 @@
 
   <body>
     <div class="barramenu">
-      <button id="open">Editar</button>
-      <div class="modal-container" id="modal_container">
-        <div class="modal">
-          <h1>ventana modal</h1>
-          <form id="formulario">
-            <input type="file" id="imagen" accept="image/*">
-            <button type="submit">Agregar Imagen</button>
-          </form>
-          
-          <button id="close">cerrar</button>
+      <div class="center">
+        <button id="showlogin">Login</button>
+      </div>
+      <div class="popup">
+        <div class="closebtn">&times;</div>
+        <div class="form">
+          <h2>LOGIN</h2>
+          <div class="fromelement">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Enter email" />
+          </div>
+          <div class="fromelement">
+            <label for="pass">Password</label>
+            <input type="text" id="password" placeholder="Enter pass" />
+          </div>
+          <div class="fromelement">
+            <input type="checkbox" id="rememberme" />
+            <label for="rememberme">Remember me</label>
+          </div>
+          <div class="fromelement">
+            <button>SIGN IN</button>
+          </div>
+          <div class="fromelement">
+            <a href="#">Forgot password</a>
+          </div>
         </div>
       </div>
     </div>
-
     <div class="contenedorpadre">
-      <div class="contenedor1">
-        
-        <div class="hexagon"></div>
-        <div class="hexagon"></div>
-        <div class="hexagon"></div>
-        <div class="hexagon"></div>
-        <div class="hexagon"></div>
-        <div class="hexagon"></div>
-        <div class="hexagon"></div>
-        <div class="hexagon"></div>
-        <div class="hexagon"></div>
-        <div class="hexagon"></div>
-        <div class="hexagon"></div>
-        <div class="hexagon"></div>
-        <div class="hexagon"></div>
-        <div class="hexagon"></div>
-        <div class="hexagon"></div>
-        
-       
+      <main class="contenedor1">
+        <main class="contenedor2"></main>
+        <main class="contenedor3">
+          <div class="contenedor-imagen1" style="top: 50px; left: 50px;">
+            <img src="ruta_de_la_imagen1" alt="Descripción de la imagen 1" />
+          </div>
+          <div class="contenedor-imagen2" style="top: 50px; left: 200px;">
+            <img src="ruta_de_la_imagen2" alt="Descripción de la imagen 2" />
+          </div>
+          <div class="contenedor-imagen3" style="top: 50px; left: 350px;">
+            <img src="ruta_de_la_imagen3" alt="Descripción de la imagen 3" />
+          </div>
+          <div class="contenedor-imagen4" style="top: 200px; left: 50px;">
+            <img src="ruta_de_la_imagen4" alt="Descripción de la imagen 4" />
+          </div>
+          <div class="contenedor-imagen5" style="top: 200px; left: 200px;">
+            <img src="ruta_de_la_imagen5" alt="Descripción de la imagen 5" />
+          </div>
+          <div class="contenedor-imagen6" style="top: 200px; left: 350px;">
+            <img src="ruta_de_la_imagen6" alt="Descripción de la imagen 6" />
+          </div>
+        </main>
+      </main>
+      <main class="CONTENEDOR-CARA"></main>
     </div>
-    <div class="contenedor2"></div>
-    </div>
-    
-    <script src="ventana.js"></script>
+    <main class="contenedor4"></main>
+    <script src="funciones.js"></script>
   </body>
 </html>
